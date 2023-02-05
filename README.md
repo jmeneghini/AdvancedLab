@@ -46,5 +46,8 @@ To update your folder with all the changes people have uploaded to GitHub, use t
 git pull
 ```
 
+# GUI Alternatives 
+For those scared of the command line, most modern IDEs have Git implementation you could use. In addition, there is GitHub Desktop which I heard is pretty reliable
+
 # Additional Info
 For additional info that isn't 100 percent necesarry for this to work but is extremely useful, check out this [link](https://rogerdudler.github.io/git-guide/)
