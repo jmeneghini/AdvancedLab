@@ -1,11 +1,11 @@
 
-	To run the experiment, we first had to determine the operating voltage for high sensitivity for the Geiger-$M\ddot{u}ller$ tube. This was done by sweeping the operating voltage from 0V - 1200V in 20V increments for 30 seconds at each step. This data was then plotted to determine a range in which the operating voltage would be sensitive enough without causing dialectric breakdown and damaging the equipment. As seen in figure [], the operating voltage for high sensitivity is within the 800V-1100V range. Thus, 900V was chosen as it was within this range at a convenient point and agreed with the value provided by the manufacturer.
+\par To run the experiment, we first had to determine the operating voltage for high sensitivity for the Geiger-$M\ddot{u}ller$ tube. This was done by sweeping the operating voltage from 0V - 1200V in 20V increments for 30 seconds at each step. This data was then plotted to determine a range in which the operating voltage would be sensitive enough without causing dialectric breakdown and damaging the equipment. As seen in figure [], the operating voltage for high sensitivity is within the 800V-1100V range. Thus, 900V was chosen as it was within this range at a convenient point and agreed with the value provided by the manufacturer.
 
 %insert plateau graph
 
-	Once the operating voltage was determined, the background radiation count was measured to account for noise in the count rate. This was done by running the Geiger-$M\ddot{u}ller$ counter for 1000 runs at 1s intervals with no radioactive samples. This background count rate was then subtracted from each data set for count rate measured to minimize noise and gain more accurate results.
+\par Once the operating voltage was determined, the background radiation count was measured to account for noise in the count rate. This was done by running the Geiger-$M\ddot{u}ller$ counter for 1000 runs at 1s intervals with no radioactive samples. This background count rate was then subtracted from each data set for count rate measured to minimize noise and gain more accurate results.
 
-	Another method in reducing the uncertainty for our experiment was calculating the dead time for the Geiger-$M\ddot{u}ller$ tube. Dead time is the period of time in which the positive ions take to reach the cathode and the tube becomes insensitive to radiation. Because count rates for radioactive samples are essentially random, we can attempt to correct this random statistical process to determine a true count rate of a substance.  Since the decay of radioactive nuclei can be described by a Poisson distribution, we relate the true count rate as
+\par Another method in reducing the uncertainty for our experiment was calculating the dead time for the Geiger-$M\ddot{u}ller$ tube. Dead time is the period of time in which the positive ions take to reach the cathode and the tube becomes insensitive to radiation. Because count rates for radioactive samples are essentially random, we can attempt to correct this random statistical process to determine a true count rate of a substance.  Since the decay of radioactive nuclei can be described by a Poisson distribution, we relate the true count rate as
 \begin{equation}
 r = Re^{-RT},
 \label{eq:ActualCountRate}
@@ -20,5 +20,6 @@ Rearranging this for true count rate, we have that
 R \approx \frac{r}{1-rT}
 \label{eq:TrueCountRate}
 \end{equation}
-	By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method.
+
+\par By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method.
 
