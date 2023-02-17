@@ -1,37 +1,3 @@
-% Seth White
-\documentclass[longbibliography, 12pt]{article}
-%\documentclass[Letter,12pt]{article}
-\usepackage[paperheight=11in,paperwidth=8.5in,margin =1in]{geometry}
-\usepackage{setspace}
-\doublespacing
-%\pagenumbering{0}
-\setlength{\parskip}{1em}
-\usepackage[superscript,biblabel]{cite}
-
-
-
-\usepackage[english]{babel}
-%\usepackage [autostyle, english = american]{csquotes}
-%\MakeOuterQuote{"}
-
-% BEGIN bibliography customizations
-\usepackage[colorlinks, allcolors=blue]{hyperref}
-
-\bibliographystyle{naturemag}
-% END customizations
-
-\usepackage{amsmath}  % needed for \tfrac, \bmatrix, etc.
-\counterwithin{equation}{section}
-\usepackage{amsfonts} % needed for bold Greek, Fraktur, and blackboard bold
-\usepackage{graphicx} % needed for figures
-
-\setlength{\parindent}{.5in}
-\graphicspath{ {./images/} }
-
-
-\usepackage{indentfirst}
-
-\begin{document}
 
 	To run the experiment, we first had to determine the operating voltage for high sensitivity for the Geiger-$M\ddot{u}ller$ tube. This was done by sweeping the operating voltage from 0V - 1200V in 20V increments for 30 seconds at each step. This data was then plotted to determine a range in which the operating voltage would be sensitive enough without causing dialectric breakdown and damaging the equipment. As seen in figure [], the operating voltage for high sensitivity is within the 800V-1100V range. Thus, 900V was chosen as it was within this range at a convenient point and agreed with the value provided by the manufacturer.
 
@@ -56,4 +22,3 @@ R \approx \frac{r}{1-rT}
 \end{equation}
 	By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method.
 
-\end{document}
