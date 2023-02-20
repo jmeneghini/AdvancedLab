@@ -19,5 +19,25 @@ R \approx \frac{r}{1-rT}
 \label{eq:TrueCountRate}
 \end{equation}
 
-\par By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method.
+\par By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method. When combining two sources, we measure the combined activity, $r_3$, as 
+\begin{equation}
+r_1 + r_2 = r_3 + b,
+\label{eq:combinedcountrate}
+\end{equation}
+where $r_1$ and $r_2$ are the individual counts and $b$ is the background count. If each count rates are corrected for dead time, Equation {combinedcountrate} becomes
+\begin{equation}
+\frac{r_1}{1-r_1 T} + \frac{r_2}{1-r_2 T} = \frac{r_3}{1-r_3 T} + b.
+\label{eq:cominedwithdeadtime}
+\end{equation}
+The background count is not corrected because it is already negligible as is. This means we can transform the equation for dead time into a quadratic by
+\begin{equation}
+r_1 r_2 r_3 T^2 - 2r_1 r_2 T + r_1 + r_2 - r_3 = 0.
+\label{eq:quaddeadtime}
+\end{equation}
+Because $T$ is roughly on the order of microseconds, we can also negate the $T^2$ term and reduces the equation to the final dead time calculation of 
+\begin{equation}
+T = \frac{r_1 + r_2 - r_3}{2r_1 r_2}.
+\label{eq:deadtime}
+\end{equation}
 
+\par By using the true count rate calculated by the measured dead time, we can use this value to understand how gamma ray radiation interacts with different materials. 
