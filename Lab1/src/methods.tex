@@ -39,5 +39,20 @@ Because $T$ is roughly on the order of microseconds, we can also negate the $T^2
 T = \frac{r_1 + r_2 - r_3}{2r_1 r_2}.
 \label{eq:deadtime}
 \end{equation}
+To determine dead time through this two-source method, we used one Co-60 source and one Cs-137 source and measured both individual count rates. Then both sources were measured together, roughly stacked on top of each other since we did not have half-sources, for the total count rate. Then the dead time was calculated by the above equation.
 
-\par By using the true count rate calculated by the measured dead time, we can use this value to understand how gamma ray radiation interacts with different materials. 
+%Taken from Sam
+\par Using the true count rate calculated by the measured dead time, we can use this value to understand how gamma ray radiation interacts with different materials. We expect the radiation attenuation through a material to follow an exponential decay as a function of thickness. The intensity $I$ after passing through a lead shield of thickness $X$ is given by the equation
+\begin{equation}
+I = I_0e^{-\mu X},
+\end{equation}
+where $I_0$ is the initial intensity and $\mu$ is the attenuation coefficient. To solve for $\mu$, we set the final intensity equal to half the initial intensity, which will occur after a thickness $X_{1/2}$, the half thickness:
+\begin{equation}
+1/2 I = I_0e^{-\mu X_{1/2}}.
+\end{equation}
+Solving Equation (2) for $\mu$ gives
+\begin{equation}
+\mu = ln(2)/{X_{1/2}}.
+\end{equation}
+ Varying different thickness of lead shielding and measuring the resulting count rate, we determine the relationship between attenuation and material thickness.
+
