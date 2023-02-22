@@ -4,6 +4,9 @@
 \usepackage[english]{babel}
 \usepackage[superscript, biblabel]{cite}
 \usepackage{verbatim}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
+\usepackage{float}
 
 \usepackage[labelfont=bf]{caption}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}}
@@ -37,9 +40,11 @@
     \section*{Methods}
     \input{methods.tex}
 
+	\newpage
     \section*{Data and Results}
     \input{data_results.tex}
 
+	\newpage
     \section*{Discussion}
     \input{discussion.tex}
 
