@@ -1,0 +1,56 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin = 1in]{geometry}
+\usepackage[english]{babel}
+\usepackage[superscript, biblabel]{cite}
+\usepackage{verbatim}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
+\usepackage{float}
+
+\usepackage[labelfont=bf]{caption}
+\renewcommand{\abstractname}{\vspace{-\baselineskip}}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage[superscript, biblabel]{cite}
+\bibliographystyle{naturemag}
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{1em}
+\usepackage{indentfirst}
+
+\title{Radiation Measurement with Geiger-Meuller Tubes \\
+    \large Advanced Lab 2023}
+
+\author{Seth White, John Meneghini, Will Mallah, and Sam Bringman}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \begin{abstract}
+        \input{abstract.tex}
+    \end{abstract}
+\newpage
+
+    \section*{Introduction}
+    \input{intro.tex}
+
+
+
+
+    \section*{Methods}
+    \input{methods.tex}
+
+	\newpage
+    \section*{Data and Results}
+    \input{data_results.tex}
+
+	\newpage
+    \section*{Discussion}
+    \input{discussion.tex}
+
+    \newpage
+    \bibliography{main.bib}
+\end{document}
