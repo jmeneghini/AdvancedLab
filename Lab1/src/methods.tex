@@ -5,9 +5,9 @@
 
 \par Another method in reducing the uncertainty for our experiment was calculating the dead time for the GM tube. Dead time is the period of time in which the positive ions take to reach the cathode and the tube becomes insensitive to radiation. Because count rates for radioactive samples are essentially random, we can attempt to correct this random statistical process to determine a true count rate of a substance.  Since the decay of radioactive nuclei can be described by a Poisson distribution, we relate the true count rate as
 \begin{equation}
-r = Re^{-RT}, \cite{Spectrum}
+r = Re^{-RT}, 
 \label{eq:ActualCountRate}
-\end{equation}
+\end{equation}\cite{Spectrum}
 where $r$ is the measured rate, $R$ is the true count rate, and $T$ is the dead time. If we take an approximation of this true count rate with a second-order Taylor Series approximation we see that
 \begin{equation}
 r \approx R(1-RT).
@@ -21,9 +21,9 @@ R \approx \frac{r}{1-rT}
 
 \par By accounting for the dead time in our experiment, we can calculate the true count rate of a radioactive sample. This is done by implementing the two-source method. When combining two sources, we measure the combined activity, $r_3$, as 
 \begin{equation}
-r_1 + r_2 = r_3 + b, \cite{Spectrum}
+r_1 + r_2 = r_3 + b,
 \label{eq:combinedcountrate}
-\end{equation}
+\end{equation} \cite{Spectrum}
 where $r_1$ and $r_2$ are the individual counts and $b$ is the background count. If each count rates are corrected for dead time, the previous equation becomes
 \begin{equation}
 \frac{r_1}{1-r_1 T} + \frac{r_2}{1-r_2 T} = \frac{r_3}{1-r_3 T} + b.
@@ -44,8 +44,8 @@ To determine dead time through this two-source method in Equation (\ref{eq:deadt
 %Taken from Sam
 \par Using the true count rate calculated by the measured dead time, we can use this value to understand how gamma ray radiation interacts with different materials. We expect the radiation attenuation through a material to follow an exponential decay as a function of thickness. The intensity $I$ after passing through a lead shield of thickness $X$ is given by the equation
 \begin{equation}
-I = I_0e^{-\mu X},\cite{Knoll}
-\end{equation}
+I = I_0e^{-\mu X},
+\end{equation}\cite{Knoll}
 where $I_0$ is the initial intensity and $\mu$ is the attenuation coefficient. To solve for $\mu$, we set the final intensity equal to half the initial intensity, which will occur after a thickness $X_{1/2}$, the half thickness:
 \begin{equation}
 1/2 I = I_0e^{-\mu X_{1/2}}.
