@@ -1,6 +1,67 @@
+To determine the spring constant of the springs used in our harmonic oscillator system, the spring was connected to a metal stand and mass was added to the end of the spring, increasing the spring's displacement from equilibrium. This displacement was measured with a meter stick while increasing the attached mass from 50 g to 130 g in steps of 20 g. The associated spring constant was then determined by plotting the gravitational force of the mass against the displacement of the spring, and then fitting the data using a linear fit. This process was repeated for each of the three springs.
+
+
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=1]{spring_avg.pdf}
-	\label{fig:Plateau}
-	\caption{}
+    \centering
+	\includegraphics[scale=0.7]{spring_constant_1.pdf}
+	\label{fig::spring1}
+	\caption{Force (N) vs. Displacement (m) for spring 1 used in the harmonic oscillator system. Mass and, therefore, force was increased while the displacement of the spring from equilibrium was measured using a meter stick with an uncertainty of 0.05 cm. The data was then linearly fit using Hooke's Law, $F = kx$, resulting in $k = 3.53 \pm 0.02$ N/m where the uncertainty was calculated from the fit's covariance matrix.}
 \end{figure}
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=0.7]{spring_constant_2.pdf}
+	\label{fig::spring2}
+	\caption{Force (N) vs. Displacement (m) for spring 2 used in the harmonic oscillator system. Mass and, therefore, force was increased while the displacement of the spring from equilibrium was measured using a meter stick with an uncertainty of 0.05 cm. The data was then linearly fit using Hooke's Law, $F = kx$, resulting in $k = 3.47 \pm 0.02$ N/m where the uncertainty was calculated from the fit's covariance matrix.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=0.7]{spring_constant_3.pdf}
+	\label{fig::spring3}
+	\caption{Force (N) vs. Displacement (m) for spring 3 used in the harmonic oscillator system. Mass and, therefore, force was increased while the displacement of the spring from equilibrium was measured using a meter stick with an uncertainty of 0.05 cm. The data was then linearly fit using Hooke's Law, $F = kx$, resulting in $k = 3.54 \pm 0.01$ N/m where the uncertainty was calculated from the fit's covariance matrix.}
+\end{figure}
+
+With the R$^2$ of each fit being 1.00 and each value having a low uncertainty, these values were deemed to be both accurate and precise. Furthermore, due to the similarity of the three spring constants, the average of the three, $k = 3.51 \pm 0.02$ N/m (assuming Gaussian) was used for the harmonic oscillator calculations.
+
+\newpage
+For the single air cart, forced harmonic oscillator, the measured oscillation amplitude was plotted against the set driving frequency of the motor.
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{oscillation_amplitude_vs_driving_frequency_single.pdf}
+	\label{fig::resonanceSingle}
+	\caption{Oscillation amplitude (cm) vs. driving frequency (Hz) for the single air cart, forced harmonic oscillator with an air cart mass of $207.9 \pm 0.05$ g as measured by an electronic scale and two springs with spring constants of $3.54 \pm 0.01$ N/m. The driving force was set manually on the motor interface and the displacement was recorded using a ruler attached to the air track.}
+\end{figure}
+
+With the resonance frequencies of a harmonic oscillator being the particular frequencies that result in a relative oscillation amplitude maximum, the single resonance frequency of the single mass system was $0.920 \pm 0.0005$ Hz, due to it resulting in a maximum oscillation amplitude of $11.5 \pm 0.05$ cm. With the theoretical resonance frequency of the system being $0.926 \pm 0.002$ Hz, the experimental and theoretical values are not statistically equivalent; however, they are within three standard deviations of each other.
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{oscillation_amplitude_vs_driving_frequency_single_weight.pdf}
+	\label{fig::resonanceSingle}
+	\caption{Oscillation amplitude (cm) vs. driving frequency (Hz) for the single air cart, forced, damped harmonic oscillator with an increased air cart mass of $227.9 \pm 0.05$ g as measured by an electronic scale and two springs with spring constants of $3.54 \pm 0.01$ N/m. The driving force was set manually on the motor interface and the displacement was recorded using a ruler attached to the air track.}
+\end{figure}
+
+Using the same method from the previous system, a resonance frequency of $0.869 \pm 0.0005$ Hz was obtained experimentally. With the theoretical resonance frequency of the system being $0.884 \pm 0.002$ Hz, the experimental and theoretical values are not statistically equivalent.
+
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=1]{oscillation_amplitude_vs_driving_frequency_double.pdf}
+	\label{fig::resonanceSingle}
+	\caption{Oscillation amplitude (cm) vs. driving frequency (Hz) for the double air cart, forced harmonic oscillator with two air carts of masses $207.9 \pm 0.05$ g and $206.4 \pm 0.05$ g as measured by an electronic scale and three springs with spring constants of $3.54 \pm 0.01$ N/m. The driving force was set manually on the motor interface and the displacement was recorded using a ruler attached to the air track.}
+\end{figure}
+
+As expected, we observed two resonance frequencies, represented by the two local maxima. In particular, the experimental \textit{slow} and \textit{fast} resonance frequencies were $0.649 \pm 0.0005$ Hz and $1.130 \pm 0.0005$ Hz, respectively. With the theoretical \textit{slow} and \textit{fast} resonance frequencies being $0.655 \pm 0.002$ Hz and $1.134 \pm 0.003$ Hz, respectively, neither of our experimental values were statistically equivalent to their theoretical expectations.
+
+
+
+
+
+
+
+
+
+
+
+
