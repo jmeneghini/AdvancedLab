@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="056bb6e4-de59-4159-9648-f872026ed625" name="Changes" comment="fixed typos and added systematic uncertainty to discussion.tex" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="eee97557-ab78-4031-a7b7-37d5a0cd10a6" />
+        <option name="url" value="https://github.com/jmeneghini/AdvancedLab.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LHhWbrtRG6SnEUBwNdnyIL0E0D" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/john/2022Fall/AdvancedLab/Lab4Final/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Lab4Final/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="LaTeX.main">
+    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler />
+        <compiler-path />
+        <compiler-arguments />
+        <envs />
+        <main-file>$APPLICATION_HOME_DIR$/bin</main-file>
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration name="main bibliography" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler>BIBTEX</compiler>
+        <compiler-path />
+        <compiler-arguments />
+        <envs>
+          <env name="BIBINPUTS" value="$PROJECT_DIR$/Lab2/src" />
+          <env name="BSTINPUTS" value="$PROJECT_DIR$/Lab2/src:" />
+        </envs>
+        <main-file>$PROJECT_DIR$/Lab2/src/main.tex</main-file>
+        <aux-dir>$APPLICATION_HOME_DIR$/bin</aux-dir>
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>EVINCE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>EVINCE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/Lab4Final/src/main.tex</main-file>
+        <output-path>$PROJECT_DIR$/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="unc" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AdvancedLab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utility" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utility/unc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="BibTeX.main bibliography" />
+      <item itemvalue="LaTeX.main" />
+      <item itemvalue="Python.unc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="LaTeX.main" />
+        <item itemvalue="Python.unc" />
+        <item itemvalue="Python.unc" />
+        <item itemvalue="LaTeX.main" />
+        <item itemvalue="Python.unc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="056bb6e4-de59-4159-9648-f872026ed625" name="Changes" comment="" />
+      <created>1675533947759</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675533947759</updated>
+      <workItem from="1675533949014" duration="1702000" />
+      <workItem from="1675535659250" duration="4456000" />
+      <workItem from="1675656549920" duration="27000" />
+      <workItem from="1676093034396" duration="3488000" />
+      <workItem from="1676096543024" duration="1349000" />
+      <workItem from="1676097906811" duration="75000" />
+      <workItem from="1676103215108" duration="1426000" />
+      <workItem from="1676177464079" duration="19000" />
+      <workItem from="1677046000878" duration="1171000" />
+      <workItem from="1677047180776" duration="3210000" />
+      <workItem from="1677190548894" duration="35000" />
+      <workItem from="1677190611702" duration="2257000" />
+      <workItem from="1677196268942" duration="12000" />
+      <workItem from="1677203231186" duration="389000" />
+      <workItem from="1677280140982" duration="2383000" />
+      <workItem from="1677282534087" duration="37000" />
+      <workItem from="1677282582123" duration="4193000" />
+      <workItem from="1677640852302" duration="4239000" />
+      <workItem from="1677732271821" duration="37000" />
+      <workItem from="1677900296941" duration="20000" />
+      <workItem from="1678057202279" duration="31000" />
+      <workItem from="1679016471045" duration="515000" />
+      <workItem from="1679016994983" duration="4692000" />
+      <workItem from="1679097334081" duration="7000" />
+      <workItem from="1679532684479" duration="12327000" />
+      <workItem from="1679551354795" duration="9000" />
+      <workItem from="1679604905888" duration="8442000" />
+      <workItem from="1679621930257" duration="17000" />
+      <workItem from="1681429522864" duration="982000" />
+    </task>
+    <task id="LOCAL-00001" summary="added graphs and set up latex files">
+      <created>1675538302617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675538302617</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cleansed">
+      <created>1676097970409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676097970409</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cleanseded">
+      <created>1676104629261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676104629261</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed some rounding and sig fig shit">
+      <created>1677192439065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677192439065</updated>
+    </task>
+    <task id="LOCAL-00005" summary="utilizing uncertainties package and plot styles">
+      <created>1677645034748</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677645034748</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added amplitude vs driving frequency graph">
+      <created>1679020735032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679020735032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added amplitude vs driving frequency graph">
+      <created>1679021472158</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679021472158</updated>
+    </task>
+    <task id="LOCAL-00008" summary="finished up code and all graphs (for now)">
+      <created>1679536231151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679536231151</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FUCKING KILL ME. I HAVE SO MUCH TO DO">
+      <created>1679551139349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679551139349</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finished up data and results">
+      <created>1679619274651</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679619274651</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed typos and added systematic uncertainty to discussion.tex">
+      <created>1679621220461</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679621220461</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added graphs and set up latex files" />
+    <MESSAGE value="Cleansed" />
+    <MESSAGE value="Cleanseded" />
+    <MESSAGE value="fixed some rounding and sig fig shit" />
+    <MESSAGE value="utilizing uncertainties package and plot styles" />
+    <MESSAGE value="added amplitude vs driving frequency graph" />
+    <MESSAGE value="finished up code and all graphs (for now)" />
+    <MESSAGE value="FUCKING KILL ME. I HAVE SO MUCH TO DO" />
+    <MESSAGE value="finished up data and results" />
+    <MESSAGE value="fixed typos and added systematic uncertainty to discussion.tex" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typos and added systematic uncertainty to discussion.tex" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AdvancedLab$unc.coverage" NAME="unc Coverage Results" MODIFIED="1679020328445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utility" />
+  </component>
+</project>
