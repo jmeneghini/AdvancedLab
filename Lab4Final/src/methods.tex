@@ -36,7 +36,7 @@ With images taken, $I/I_0$ had to be extracted from each image to determine $\mu
 
 where $I_j$ is the intensity of a ray as it exits the $j$-th object and $I_N$ is the intensity of a ray as it exits the $N$-th object.
 
-Consider the X-ray image in figure 2; along an X-ray's journey from the tube to the detector, it encounters two different attenuates, the air and the object we place in the imaging area (with the machine setting a completely non-attentuated beam equal to 1 in the image, where 1 is white and 0 is black, the only values we can measure from pixel inspection are the relative intensities of the x-ray. Because of this, $I$ will now simply refer to the pixel intensity (0-1) and will replace $I/I_0$). In the image, $I$ becomes $I_{\text{bkg}}$ and $I_{\text{ctr}}$ for the pixel intensity in the background and center of the image, respectively. $I_{\text{bkg}}$ refers to attenuation caused by the air, while $I_{\text{ctr}}$ refers to attenuation caused by both the air and the object. Using Eq (\ref{eq:ProbI}), one can show that $I_{\text{ctr}} = I_{\text{bkg}} I_{\text{obj}}$, where $I_{\text{obj}}$ is the attenuation caused by the object. Therefore, the attenuation caused by the object, and the pixel intensity if there were no attenuation from the air is given by
+Consider the X-ray image in figure 2; along an X-ray's journey from the tube to the detector, it encounters two different attenuators, the air and the object we place in the imaging area (with the machine setting a completely non-attentuated beam equal to 1 in the image, where 1 is white and 0 is black, the only values we can measure from pixel inspection are the relative intensities of the x-ray. Because of this, $I$ will now simply refer to the pixel intensity (0-1) and will replace $I/I_0$). In the image, $I$ becomes $I_{\text{bkg}}$ and $I_{\text{ctr}}$ for the pixel intensity in the background and center of the image, respectively. $I_{\text{bkg}}$ refers to attenuation caused by the air, while $I_{\text{ctr}}$ refers to attenuation caused by both the air and the object. Using Eq (\ref{eq:ProbI}), one can show that $I_{\text{ctr}} = I_{\text{bkg}} I_{\text{obj}}$, where $I_{\text{obj}}$ is the attenuation caused by the object. Therefore, the attenuation caused by the object, and the pixel intensity if there were no attenuation from the air is given by
 
 \begin{equation}
     I_{\text{obj}} = \frac{I_{\text{ctr}}}{I_{\text{bkg}}}
@@ -49,3 +49,5 @@ Consider the X-ray image in figure 2; along an X-ray's journey from the tube to 
 	\label{figure:IntensityDiagram}
 	\caption{}
 \end{figure}
+
+With this relative intensity and the thickness of object, the attenuation coefficient and effective energy of the interaction was determined using equation \ref{eq:AttnLaw}.
