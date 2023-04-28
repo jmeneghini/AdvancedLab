@@ -1,0 +1,44 @@
+\footnotesize
+\begin{verbatim}
+    def get_relative_intensity(path, background_intensity=0):
+    """
+    Calculates the relative intensity of a square in the center of an image.
+    :param path: Path to image
+    :param background_intensity: Intensity of background
+    :return: Relative intensity
+    """
+    # load image
+    img = cv2.imread(path, 0)
+
+    # convert to float and normalize
+    img = img.astype(np.float32)/255
+
+    # get mean pixel value and std dev of square in center of image
+    center = (int(img.shape[0]/2), int(img.shape[1]/2))
+    length = 100
+    square = img[int(center[0]-length/2):int(center[0]+length/2), 
+    int(center[1]-length/2):int(center[1]+length/2)]
+
+    mean, std = cv2.meanStdDev(square)
+
+    # if intensity is 1 or 0, return False, so they are not used as data points
+    if mean[0][0] >= 0.999 or mean[0][0] <= 0.001:
+        return False
+
+    # obtain relative intensity by normalizing by background intensity
+    # (I_square = I_background * I_object -> I_object = I_square / I_background)
+    mean[0][0] = mean[0][0] / background_intensity
+
+
+    # convert image to rgb
+    img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+
+    # draw red square on image and relative intensity and std on image
+    cv2.rectangle(img, (int(center[0]-length/2), int(center[1]-length/2)),
+     (int(center[0]+length/2), int(center[1]+length/2)), (0, 0, 255), 3)
+
+    cv2.putText(img, f"Intensity: {mean[0][0]:.3f} +- {std[0][0]:.3f}", (int(center[0]-length/2),
+                int(center[1]-length/2)-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+
+    return ufloat(mean[0][0], std[0][0])
+\end{verbatim}
