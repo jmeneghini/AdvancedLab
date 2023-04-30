@@ -1,4 +1,4 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[12pt, letterpaper, longbibliography]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[margin = 1in]{geometry}
 \usepackage[english]{babel}
@@ -9,18 +9,52 @@
 \usepackage{float}
 \usepackage{subfigure}
 \usepackage{tabularx}
-\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+
 
 \usepackage[labelfont=bf]{caption}
 \renewcommand{\abstractname}{\vspace{-\baselineskip}}
 \usepackage{amsmath}
 \usepackage{lipsum}
-\bibliographystyle{naturemag}
+\bibliographystyle{AJP}
 \usepackage{graphicx}
 \graphicspath{{../figures/}}
 \setlength{\parindent}{0.5in}
 \setlength{\parskip}{1em}
 \usepackage{indentfirst}
+
+
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
 
 \title{Viability of an X-Ray Spectrum's Effective Energy for Use in Simulation \\
     \large Advanced Lab 2023}
@@ -49,14 +83,13 @@
     \section*{Data and Results}
     \input{data_results.tex}
 
-	\newpage
     \section*{Discussion}
     \input{discussion.tex}
 
     \newpage
     \bibliography{main.bib}
-
-    \newpage
-    \section*{Appendix}
+    
+	\newpage
+	\section*{Appendix}
     \include{appendix.tex}
 \end{document}

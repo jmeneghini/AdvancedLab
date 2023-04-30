@@ -1,5 +1,4 @@
-\footnotesize
-\begin{verbatim}
+\begin{lstlisting}[language = python, caption=Intensity Extraction Code, floatplacement=H]
     def get_relative_intensity(path, background_intensity=0):
     """
     Calculates the relative intensity of a square in the center of an image.
@@ -41,4 +40,4 @@
                 int(center[1]-length/2)-10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
     return ufloat(mean[0][0], std[0][0])
-\end{verbatim}
+\end{lstlisting}

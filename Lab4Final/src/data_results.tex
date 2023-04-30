@@ -1,4 +1,4 @@
-In order to relate the calculated attenuation coefficient of a particular object to the effective energy, a $2^\text{nd}$ degree, 4 knot B-spline was used to fit NIST's mass attenuation coefficient data, where the mass attenuation coefficient is defined as the attenuation coefficient divided by the object's density, $\mu/\rho$. This fit, implemented with the Python package Scikit-Learn \cite{scikit-learn}, provided $\mu = f(E_{\text{eff}})$; however, $E_{\text{eff}} = f(\mu)$ was needed. The descibed fits are shown in figure \ref{figure:NISTSplineFit}.
+In order to relate the calculated attenuation coefficient of a particular object to the effective energy, a $2^\text{nd}$ degree, 4 knot B-spline was used to fit NIST's mass attenuation coefficient data, where the mass attenuation coefficient is defined as the attenuation coefficient divided by the object's density, $\mu/\rho$. This fit, implemented with the Python package Scikit-Learn \cite{SKLearn}, provided $\mu = f(E_{\text{eff}})$; however, $E_{\text{eff}} = f(\mu)$ was needed. The descibed fits are shown in Figure (\ref{figure:NISTSplineFit}).
 
 
 \begin{figure}[htbp]
@@ -15,12 +15,12 @@ In order to relate the calculated attenuation coefficient of a particular object
     \subfigure[Mg]{\includegraphics[width=1\linewidth]{Mg_NISTSplineFit.pdf}}
     \subfigure[Plastic Scintillator]{\includegraphics[width=1\linewidth]{Plastic Scintillator (Vinyltoluene-based)_NISTSplineFit.pdf}}
     \subfigure[Water]{\includegraphics[width=1\linewidth]{Water, Liquid_NISTSplineFit.pdf}}
-    \caption{The NIST mass attenuation coefficient (in cm$^2$/g) vs. effective energy (in keV) for the Al, Fe, Mg, Plastic Scintillator, and Water fitted using the described B-Spline.}
+    \caption{The NIST mass attenuation coefficient (in cm$^2$/g) vs. effective energy (in keV) for the Al, Fe, Mg, plastic scintillator, and water fitted using the described B-Spline.}
     \label{figure:NISTSplineFit}
 \end{figure}
 
 \newpage
-Because $f$ represents an abstract model, an inverse was unable to be taken, so an evenly spaced $E_{\text{eff}}$ array of 10,000 values ranging from 0.8 keV to 100 keV was substituted into our model, providing their associated $\mu/\rho$ array. Given a particular $\mu/\rho \pm \sigma$, where $\sigma$ represents the sample standard deviation of the mass attenuation coefficient, the $E_{\text{eff}}$ was found by first determining the index of the element in the $\mu/\rho$ array closest to the particular $\mu/\rho$. The associated $E_{\text{eff}}$ was then simply the element in the $E_{\text{eff}}$ array located at the determined index. The range of error for a particular $E_{\text{eff}}$ was calculated by repeating the indexing process for $\mu/\rho + \sigma$ and $\mu/\rho - \sigma$. The results of this indexing technique for each X-ray image can be found in table 1
+Because $f$ represents an abstract model, an inverse was unable to be taken, so an evenly spaced $E_{\text{eff}}$ array of 10,000 values ranging from 0.8 keV to 100 keV was substituted into our model, providing its associated $\mu/\rho$ array. Given a particular $\mu/\rho \pm \sigma$, where $\sigma$ represents the sample standard deviation of the mass attenuation coefficient, the $E_{\text{eff}}$ was found by first determining the index of the element in the $\mu/\rho$ array closest to the particular $\mu/\rho$. The associated $E_{\text{eff}}$ was then the element in the $E_{\text{eff}}$ array located at the determined index. The range of error for a particular $E_{\text{eff}}$ was calculated by repeating the indexing process for $\mu/\rho + \sigma$ and $\mu/\rho - \sigma$. The results of this indexing technique for each X-ray image can be found in Table (\ref{table::results}).
 
 % \begin{table}[H]
 %     \centering
@@ -71,22 +71,24 @@ Because $f$ represents an abstract model, an inverse was unable to be taken, so 
     \input{../tables/combinedTable.tex}
     }
     \caption{test}
+    \label{table::results}
 \end{table}
 
 
 
-The graphs of the $E_{\text{eff}}$ for each kVp and material combination is found in figure 4. In order to compare the experimental results, simulated $E_{\text{eff}}$ values were obtained with the Python module SpekPy \cite{SpekPy}, using the X-ray tube assembly specifications as provided by the manufacturer \cite{CArm}.
+The graphs of the $E_{\text{eff}}$ for each kVp and material combination can be found in Figure (\ref{figure::results}). In order to validate the experimental results, simulated $E_{\text{eff}}$ values were obtained with the Python module SpekPy \cite{SpekPy}, using the X-ray tube assembly specifications as provided by the manufacturer \cite{CArm}.
 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{effEnergy.pdf}
     \caption{}
+    \label{figure::results}
 \end{figure}
 
-Figure 4 shows relative agreement and an approximately linear increase for the Al, Fe, and Mg, up until 50 kVp, where a sudden spike in $E_{\text{eff}}$ is observed. For the plastic scintillator and water, vastly different values are observed. Upon further inspection by increasing the range of the fit shown in figure 3, the two values increase at an exponential rate. Furthermore, only a few values agree with the simulation; the rate of increase of $E_{\text{eff}}$ with respect to kVp is greater for the experimental values.
+Figure (\ref{figure::results}) shows relative agreement and an approximately linear increase for the Al, Fe, and Mg, up until 50 kVp, where a sudden spike in $E_{\text{eff}}$ is observed. For the plastic scintillator and water, vastly different values are observed. Upon further inspection by increasing the range of the fit shown in Figure (\ref{figure:NISTSplineFit}), the two values increase at an exponential rate. Furthermore, the experimental rate of increase of $E_{\text{eff}}$ with respect to kVp is greater for the monoatomic attenuators.
 
-For the offset experiment, the intensity values for the image with the centered Al was obtained with the standard pipeline that was used for all other images. On the other hand, the intensity values for the image with the offsetted Al were obtained manually using the software ImageJ \cite{ImageJ}.
+For the offset experiment, the intensity values for the image with the centered Al was obtained with the extraction code in the appendix. On the other hand, the intensity values for the image with the offsetted Al were obtained manually using the software ImageJ. \cite{ImageJ}. The results of this experiment can be found in Table (\ref{table::offset})
 
 
 \begin{table}[H]
@@ -95,12 +97,13 @@ For the offset experiment, the intensity values for the image with the centered 
     \input{../tables/offsetTable.tex}
     }
     \caption{test}
+    \label{table::offset}
 \end{table}
 
-Table 2 shows unexpected discrepancies between the centered and offsetted Al. A slight difference is expected due to the point-like nature of the x-ray source; however, it can not explain the large difference observed due to the large distance (44.95 cm) between the x-ray source and detector.
+The results of this experiment show unexpected discrepancies between the centered and offsetted Al. A slight difference in $E_{\text{eff}}$ is expected due to the point-like nature of the x-ray source; however, it can not explain the statistical inequivalency observed due to the large distance (44.95 cm)\cite{CArm} between the x-ray source and detector; therefore, demonstrating a dependence on the object's position in the imaging area for the $E_{\text{eff}}$.
 
 
-For the thickness varying experiment, x-ray images of Al were taken at 40 kVp. The thickness of the Al was varied by using two different attenuators, one of thickness 2.286 mm and the other of thickness 0.813 mm. The intensity values for each image was obtained with the standard pipeline that was used for all other images.
+For the thickness varying experiment, x-ray images of Al were taken at 40 kVp. The thickness of the Al was varied by using two different attenuators, one of thickness 2.286 mm (labeled N) and the other of thickness 0.813 mm (labeled I), as found in Table (\ref{table::matTable}). The intensity values for each image was obtained with the extraction code in the appendix. The results of this experiment can be found in Table (\ref{table::thickness}).
 
 \begin{table}[H]
     \small
@@ -108,9 +111,10 @@ For the thickness varying experiment, x-ray images of Al were taken at 40 kVp. T
     \input{../tables/varyThickness.tex}
     }
     \caption{test}
+   	\label{table::thickness}
 \end{table}
 
-While we expect 
+The results of this experiment, once again, show unexpected discrepancies in $E_{\text{eff}}$ between the two thickness. While the $E_{\text{eff}}$'s are closer than what was measured for the the offset experiment, the two values are statistically inequivalent; therefore, demonstrating a thickness dependence of the $E_{\text{eff}}$.
 
 
 
