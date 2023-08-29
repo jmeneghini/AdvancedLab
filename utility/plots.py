@@ -57,4 +57,4 @@ def set_style():
 
 # Make an module importable
 if __name__ == "__main__":
-    print("This is a module, not a script... dumbass")
+    print("This is a module, not a script... dummy")
